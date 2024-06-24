@@ -32,7 +32,7 @@ The Skincare addiction subreddit has a significant amount of American users whic
 #### Executive Summary And Recommendations
 
 
-The purpose of this project was to find a way to answer the problem statement question, What characteristics make K-beauty unique compared to American skincare? To do this, we needed to classify both korean skincare subreddit and the skincare addiction subreddit using the two subreddits, the skincare addiction subreddit and the korean skincare subreddit. TO do this, we needed to explore classification models such as Logistic regression, KNN and more and go through the NLP process as well. 
+The purpose of this project was to find a way to answer the problem statement question, What characteristics make K-beauty unique compared to American skincare? To do this, we needed to classify both korean skincare subreddit and the skincare addiction subreddit using the two subreddits, the skincare addiction subreddit and the korean skincare subreddit. To do this, we needed to explore classification models such as Logistic regression, KNN and more and go through the NLP process as well. 
 
 After deciding what data to use, I began to research to formulate my hypothesis with the data. Based on my research, my hypothesis was that Korean skincare was unique because of the ingredients that were used. In my data cleaning process, I took the three data sets that I had, and identified null values, data types, variable names, and missing text data. As I identified the data, I took appropriate measures to clean it by replacing, using count vectorization, testing whether to use lemmanization or tokenization etc. 
 
