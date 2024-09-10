@@ -1,5 +1,6 @@
 # What characteristics make K-beauty unique compared to American skincare brands?
 #### Problem statement ###:
+
 The skincare industry in the United States is experiencing unprecedented growth, driven by increasing consumer awareness, advancements in product formulations, and the rise of e-commerce([Source](https://illuminationconsulting.com/2024/06/25/)).
 
 An American skincare company called "AK" is looking to integrate Korean skincare in their line as the company changes to be American-Korean based. Their mission as a company is implementing the latest in skincare technology in their products. As of now, the company is seeking and effective way to classify their skin care products in their system to find what products belong to the American versus the Korean. Our goal as data scientist is to both find the most effective way to classify skin care products and while doing so, find a way to use this to help market their Korean Skin Care. By creating a classifier modeling system that has a high score in comparison to our baseline data, we would be able to not only organize the products but also potentially help market the Korean skin care implementation in the new American Market sector. 
@@ -30,25 +31,46 @@ The Skincare addiction subreddit has a significant amount of American users whic
 
 
 ---
+#### Exploratory Data Analysis
+
+
+
 #### Modeling 
 I tried a variety of models including Logistic Regression with with Count Vectorizer, Tfidf, K-Nearest Neighbors, Random Forest Classifier, and Naive Bayes but the one that regularly had the highest accuracy was Multinomial Naive Bayes model. To preprocess the text, I used Count Vectorizer with few restraints(max features). Most of the limitation came from the stop words and korean text. This affected the accuracy, however made the information more useful.
 
-#### Executive Summary, Conclusion & Recommendations
+I found that utilizing multinomial Naive Bayes model, with default parameters and a score of 79% accuracy and was higher that the baseline accuracy score which was approximatley 50%. I achieved this by implementing stop words and getting rid of noise in the data. I also used grid search and tuned hyperparameters for my log reg model with was 76%.
 
+I was also able to determine that there was 53 false postives and 56 false negatives in my misclassified posts with my Logistic regression model. With the feature importance, I found that there was many distict words that were important to post data that may be realted mostly to skin concerns. The reason for this I believe is because both subreddits are used alot for gauging opinion adn the text data matched with diction that pertains to this.
+
+#### Executive Summary, Conclusion & Recommendations
 
 The purpose of this project was to find a way to answer the problem statement question, What characteristics make K-beauty unique compared to American skincare? To do this, we needed to classify both korean skincare subreddit and the skincare addiction subreddit using the two subreddits, the skincare addiction subreddit and the korean skincare subreddit. To do this, we needed to explore classification models such as Logistic regression, KNN and more and go through the NLP process as well. 
 
-![Alt text](/Users/haziel/Documents/GA_Adobe/Generalassembly/Submissions/project_4/photos p4(graphs and charts))
-
 After deciding what data to use, I began to research to formulate my hypothesis with the data. Based on my research, my hypothesis was that Korean skincare was unique because of the ingredients that were used. In my data cleaning process, I took the three data sets that I had, and identified null values, data types, variable names, and missing text data. As I identified the data, I took appropriate measures to clean it by replacing, using count vectorization, testing whether to use lemmanization or tokenization etc. 
 
-In summary, the answer is that there are many factors, but main ones that stood out are Korean skincares use of "natural" and innovative skin technology that includes implementing unique ingredients such as rice and snail mucin as discovered in the EDA process and more use /discussion of specfic types of skin products such as water based cleansers, toners etc. They also focus on prevention as there was much talk about skin care prevention in the korean skincare subreddit. To summarize the EDA for both skincare reddits some intresting findings were that the top written about Brands included Beauty of Joseon, La Roche Posay, and cosrx. The top written about Ingredients include Snail Mucin, Cleansing oil, Hyaluronic Acid and Salicylic Acid. Finally the Top written about skin concerns include Acne Prone, Dry Skin, Sensitive skin, Oily Acne Prone and Prone skin in general. It was found that Although there is alot of overlap in the skincare addiction subreddit there is more discussion on brands and less on "natural" skin care ingredients.
+In summary, the answer is that there are many factors, but main ones that stood out are Korean skincares use of "natural" and innovative skin technology that includes implementing unique ingredients such as rice and snail mucin as discovered in the EDA process and more use /discussion of specfic types of skin products such as water based cleansers, toners etc. They also focus on prevention as there was much talk about skin care prevention in the korean skincare subreddit.
 
-For the the Korean skincare subreddit some information that was found was that the top written about products include cosrx snail mucin, Lab birch  juice, La Roche Posay, skin1004 madgascar centella. Top written about skin concerns include acne, oily acne prone, dry sensitive skin, sensitve acne prone, skin care routine. Lastly, unique words only seen in the Korean skincare subreddit include, water based cleanser, rice toner, anua heartleaf,  snail mucin essence,  skin barrier, and "started using".
+To summarize the EDA for both skincare reddits, some intresting findings were that.. 
+- The top written about Brands included Beauty of Joseon, La Roche Posay, and cosrx.
 
-In the modeling process, I decided to choose my models based off the NLP process. I found that utilizing multinomial Naive Bayes model, with default parameters would best help classify K-beauty and American skincare with a score of 78% accuracy and was higher that the baseline accuracy score which was approximatley 50%. I achieved this by implementing stop words and getting rid of noise in the data. I also used grid search and tuned hyperparameters for my log reg model with was 76%. I was also able to determine that there was 53 false postives and 56 false negatives in my misclassified posts with my Log reg model. With the feature importance I found that there was many distict words that were important to post data that may be realted mostly to skin concerns. The reason for this I believe is because both subreddits are used alot for gauging opinion adn the text data matched with diction that pertains to this.
+The Top written about Ingredients include 
+- Snail Mucin, Cleansing oil, Hyaluronic Acid and Salicylic Acid.
 
-Based on my findings, my recommendation is that utilizing multinomial Naive Bayes model, with default parameters will best help classify K-beauty and American skincare and can be used for further marketing exploration.
+Finally the Top written about skin concerns include 
+- Acne Prone, Dry Skin, Sensitive skin, Oily Acne Prone and Prone skin in general.
+
+It was found that Although there was alot of overlap in the skincare addiction subreddit there is more discussion on brands and less on "natural" skin care ingredients.
+
+For the the Korean skincare subreddit some information that was found was that the top written about products included
+- cosrx snail mucin, Lab birch  juice, La Roche Posay, skin1004 madgascar centella.
+
+Top written about skin concerns include 
+- acne, oily acne prone, dry sensitive skin, sensitve acne prone, skin care routine.
+
+Lastly, unique words only seen in the Korean skincare subreddit include
+- water based cleanser, rice toner, anua heartleaf,  snail mucin essence,  skin barrier, and "started using".
+
+Based on my findings, my recommendation is that utilizing multinomial Naive Bayes model, with default parameters will best help classify K-beauty and American skincare and can be used to support marketing initatives to better target customers.
 
 
 Limitations
