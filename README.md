@@ -5,7 +5,9 @@ An American skincare company called "AK" is looking to integrate Korean skincare
 ---
 
 ### Datasets ###
-Background on data: The following data was obtained from Reddit, specifically the Skincare Addiction Subreddit and the Korean Skincare subreddit. Skincare Addiction is a subreddit where users discuss skin care concerns, product recommendations, opinions of ingredients, and more. The Korean skincare subreddit is a similar community to the Skin Care Addiction where they discuss similar general topics, however, the Korean skincare subreddit is known to discuss more about Korean-based skin care products, ingredients and the industry but not exclusive to all skincare products. 
+Background on data: The following data was obtained from web-scraping Reddit, particularly the Skincare Addiction subreddit and the Korean Skincare subreddit. 
+
+Skincare Addiction is a subreddit where users discuss skin care concerns, product recommendations, opinions of ingredients, and more. The Korean skincare subreddit is a similar community to the Skin Care Addiction where they discuss similar general topics, however, the Korean skincare subreddit is known to discuss more about Korean-based skin care products, ingredients and the industry but not exclusive to all skincare products. 
 
 The Skincare addiction subreddit has a significant amount of American users which is why the subreddit would help compare. As for the Korean skin care Reddit there is a mix of Korean and American users. 
 
