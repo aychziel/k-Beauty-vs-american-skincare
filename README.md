@@ -1,10 +1,5 @@
-# Project 1: What characteristics make K-beauty unique compared to American skincare?
-
-
-### Problem Statement
-
-### Question: What characteristics make K-beauty unique compared to American skincare?
-
+# What characteristics make K-beauty unique compared to American skincare brands?
+# Problem statement:
 AK is an American skincare company that is looking to integrate Korean skincare in their line as the company changes to be American Korean based. Their mission as a company is implementing the latest in skincare technology. As of now, the company is seeking to classify their skin care products and needs help in finding effective ways to do so in their Skin Care database in a particular way that is able to determine what products belong to the American versus the Korean. Our goal as data scientist is to find the most effective way to classify skin care products and potentially find ways to use this to help market their Korean Skin Care in the American sector of the company. By creating a classifier modeling system that has a high score in comparison to our baseline data, we would be able to not only organize the products but also potentially help Market the Korean skin care implementation in the new American Market sector. 
 
 ---
