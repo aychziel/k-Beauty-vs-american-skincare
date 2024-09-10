@@ -3,7 +3,7 @@
 
 The skincare industry in the United States is experiencing unprecedented growth, driven by increasing consumer awareness, advancements in product formulations, and the rise of e-commerce ([Source](https://illuminationconsulting.com/2024/06/25/)).
 
-An American skincare company called "AK" is looking to integrate Korean skincare in their line as the company changes to be American-Korean based. Their mission as a company is implementing the latest in skincare technology in their products. As of now, the company is seeking and effective way to classify their skin care products in their system to find what products belong to the American versus the Korean. By creating a classifier modeling system that has a high score in comparison to our baseline data, we would not only be able to classify the products but also, obtain strong findings to help market the Korean skin care implementation in the new American Market sector most effectively. 
+An American skincare company called "AK" is looking to add Korean skincare in their line as the company changes to be American-Korean based. Their mission as a company is implementing the latest in skincare technology in their products. As of now, the company is seeking an effective way to classify their skin care products in their system to find what products belong to the American versus the Korean and how they can better differentiate their new products for marketing purposes. By creating a classifier modeling system, we would not only be able to classify the products but also, obtain strong findings to help market the Korean skin care implementation in the new American Market sector most effectively. 
 
 The goal of this project: (1) Build a classification model that can accurately classify the Korean from the American products. (2) Offer recommendations and insights on the main differences and share findings to help support marketing decisions to support the mission of the company.
 
@@ -19,7 +19,6 @@ The Skincare addiction subreddit has a significant amount of American users whic
 ---
 
 ### Data Dictionary ###
-
 
 |Feature|Type|Dataset|Description|
 |---|---|---|---|
@@ -61,7 +60,7 @@ The Top written about Ingredients include
 Finally the Top written about skin concerns include 
 - Acne Prone, Dry Skin, Sensitive skin, Oily Acne Prone and Prone skin in general.
 
-It was found that Although there was alot of overlap in the skincare addiction subreddit there is more discussion on brands and less on "natural" skin care ingredients.
+It was found that although there was overlap in the skincare addiction subreddit there is more discussion on brands and less on "natural" skin care ingredients.
 
 ![bigrams](https://github.com/aychziel/K-Beauty-vs-American-Skincare/blob/main/plots/common_frequent_bigrams_koreanskincare_subreddit.png) 
 
