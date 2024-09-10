@@ -1,7 +1,7 @@
 # What characteristics make K-beauty unique compared to American skincare brands?
-#### Problem statement ###:
+#### Problem statement :
 
-The skincare industry in the United States is experiencing unprecedented growth, driven by increasing consumer awareness, advancements in product formulations, and the rise of e-commerce([Source](https://illuminationconsulting.com/2024/06/25/)).
+The skincare industry in the United States is experiencing unprecedented growth, driven by increasing consumer awareness, advancements in product formulations, and the rise of e-commerce ([Source](https://illuminationconsulting.com/2024/06/25/)).
 
 An American skincare company called "AK" is looking to integrate Korean skincare in their line as the company changes to be American-Korean based. Their mission as a company is implementing the latest in skincare technology in their products. As of now, the company is seeking and effective way to classify their skin care products in their system to find what products belong to the American versus the Korean. Our goal as data scientist is to both find the most effective way to classify skin care products and while doing so, find a way to use this to help market their Korean Skin Care. By creating a classifier modeling system that has a high score in comparison to our baseline data, we would be able to not only organize the products but also potentially help market the Korean skin care implementation in the new American Market sector. 
 
