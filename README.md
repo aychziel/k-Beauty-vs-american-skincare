@@ -1,5 +1,7 @@
 # What characteristics make K-beauty unique compared to American skincare brands?
 #### Problem statement ###:
+The skincare industry in the United States is experiencing unprecedented growth, driven by increasing consumer awareness, advancements in product formulations, and the rise of e-commerce([Source](https://illuminationconsulting.com/2024/06/25/)).
+
 An American skincare company called "AK" is looking to integrate Korean skincare in their line as the company changes to be American-Korean based. Their mission as a company is implementing the latest in skincare technology in their products. As of now, the company is seeking and effective way to classify their skin care products in their system to find what products belong to the American versus the Korean. Our goal as data scientist is to both find the most effective way to classify skin care products and while doing so, find a way to use this to help market their Korean Skin Care. By creating a classifier modeling system that has a high score in comparison to our baseline data, we would be able to not only organize the products but also potentially help market the Korean skin care implementation in the new American Market sector. 
 
 
@@ -29,7 +31,7 @@ The Skincare addiction subreddit has a significant amount of American users whic
 
 ---
 #### Modeling 
-I tried a variety of models including Logistic Regression with with Count Vectorizer, Tfidf, K-Nearest Neighbors, Random Forest Classifier, and Naive Bayes but the one that regularly had the highest accuracy was Multinomial Logistic Regression. To preprocess the text, I used Count Vectorizer with relativly few restraints (no max feature limit, low min df, high max df). Most of the limitation came from the stop words. While this hurt the accuracy, it made the interpretation much more useful.
+I tried a variety of models including Logistic Regression with with Count Vectorizer, Tfidf, K-Nearest Neighbors, Random Forest Classifier, and Naive Bayes but the one that regularly had the highest accuracy was Multinomial Naive Bayes model. To preprocess the text, I used Count Vectorizer with few restraints(max features). Most of the limitation came from the stop words and korean text. This affected the accuracy, however made the information more useful.
 
 #### Executive Summary, Conclusion & Recommendations
 
