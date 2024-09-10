@@ -49,7 +49,9 @@ After deciding what data to use, I began to research to formulate my hypothesis 
 
 In summary, the answer is that there are many factors, but the main ones that stood out are Korean skincares use of "natural" and innovative skin technology that includes implementing unique ingredients such as rice and snail mucin and specific discussion of types of skin products such as water based cleansers, toners etc. They also focus on prevention as there was discussion about skin care prevention in the korean skincare subreddit.
 
-Some findings were that.. 
+Some of my findings for both skincare subreddits were that.. 
+
+![bigrams](https://github.com/aychziel/K-Beauty-vs-American-Skincare/blob/main/plots/common_frequent_bigrams_both_subreddits.png) 
 
 - The top written about Brands included Beauty of Joseon, La Roche Posay, and cosrx.
 
@@ -60,6 +62,8 @@ Finally the Top written about skin concerns include
 - Acne Prone, Dry Skin, Sensitive skin, Oily Acne Prone and Prone skin in general.
 
 It was found that Although there was alot of overlap in the skincare addiction subreddit there is more discussion on brands and less on "natural" skin care ingredients.
+
+![bigrams](https://github.com/aychziel/K-Beauty-vs-American-Skincare/blob/main/plots/common_frequent_bigrams_koreanskincare_subreddit.png) 
 
 For the the Korean skincare subreddit some information that was found was that the top written about products included
 - cosrx snail mucin, Lab birch  juice, La Roche Posay, skin1004 madgascar centella.
