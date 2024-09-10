@@ -30,7 +30,9 @@ The Skincare addiction subreddit has a significant amount of American users whic
 ---
 ### Exploratory Data Analysis ###
 
-As I identified the data, I took appropriate measures by using count vectorization, testing whether to use lemmanization or tokenization etc ![word cloud](https://github.com/aychziel/K-Beauty-vs-American-Skincare/blob/main/plots/word_cloud_eda.png). I also tried to remove korean text for the purpose of this analysis.
+As I identified the data, I took appropriate measures by using count vectorization, testing whether to use lemmanization or tokenization etc ![word cloud](https://github.com/aychziel/K-Beauty-vs-American-Skincare/blob/main/plots/word_cloud_eda.png) 
+
+I also tried to remove korean text for the purpose of this analysis.
 
 #### Modeling ###
 I tried a variety of models including Logistic Regression with with Count Vectorizer, Tfidf, K-Nearest Neighbors, Random Forest Classifier, and Naive Bayes. To preprocess the text, I used Count Vectorizer with few restraints(max features, stop words). Most of the limitation came from the stop words. This affected the accuracy, however made the information more useful.
