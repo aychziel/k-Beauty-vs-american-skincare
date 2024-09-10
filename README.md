@@ -1,5 +1,5 @@
 # What characteristics make K-beauty unique compared to American skincare brands?
-#### Problem statement ### :
+#### Problem statement :
 
 The skincare industry in the United States is experiencing unprecedented growth, driven by increasing consumer awareness, advancements in product formulations, and the rise of e-commerce ([Source](https://illuminationconsulting.com/2024/06/25/)).
 
