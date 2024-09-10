@@ -2,10 +2,13 @@
 #### Problem statement ###:
 An American skincare company called "AK" is looking to integrate Korean skincare in their line as the company changes to be American-Korean based. Their mission as a company is implementing the latest in skincare technology in their products. As of now, the company is seeking and effective way to classify their skin care products in their system to find what products belong to the American versus the Korean. Our goal as data scientist is to both find the most effective way to classify skin care products and while doing so, find a way to use this to help market their Korean Skin Care. By creating a classifier modeling system that has a high score in comparison to our baseline data, we would be able to not only organize the products but also potentially help market the Korean skin care implementation in the new American Market sector. 
 
+
+The goal of this project: (1) Build a classification model that can accurately classify the Korean and American products. (2) Offer recommendations and insights on the main differences and share findings to help support marketing decisions to support the mission of the company.
+
 ---
 
 ### Datasets ###
-Background on data: The following data was obtained from web-scraping Reddit, particularly the Skincare Addiction subreddit and the Korean Skincare subreddit. 
+Background on data: The following data was obtained from web-scraping the Skincare Addiction subreddit and the Korean Skincare subreddit on Reddit. 
 
 Skincare Addiction is a subreddit where users discuss skin care concerns, product recommendations, opinions of ingredients, and more. The Korean skincare subreddit is a similar community to the Skin Care Addiction where they discuss similar general topics, however, the Korean skincare subreddit is known to discuss more about Korean-based skin care products, ingredients and the industry but not exclusive to all skincare products. 
 
@@ -25,8 +28,10 @@ The Skincare addiction subreddit has a significant amount of American users whic
 
 
 ---
+#### Modeling 
+I tried a variety of models including Logistic Regression with with Count Vectorizer, Tfidf, K-Nearest Neighbors, Random Forest Classifier, and Naive Bayes but the one that regularly had the highest accuracy was Multinomial Logistic Regression. To preprocess the text, I used Count Vectorizer with relativly few restraints (no max feature limit, low min df, high max df). Most of the limitation came from the stop words. While this hurt the accuracy, it made the interpretation much more useful.
 
-#### Executive Summary And Recommendations
+#### Executive Summary, Conclusion & Recommendations
 
 
 The purpose of this project was to find a way to answer the problem statement question, What characteristics make K-beauty unique compared to American skincare? To do this, we needed to classify both korean skincare subreddit and the skincare addiction subreddit using the two subreddits, the skincare addiction subreddit and the korean skincare subreddit. To do this, we needed to explore classification models such as Logistic regression, KNN and more and go through the NLP process as well. 
