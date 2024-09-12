@@ -50,7 +50,7 @@ In summary, the answer is that there are many factors, but the main ones that st
 
 Some of my findings for both skincare subreddits were that.. 
 
-![bigrams](https://github.com/aychziel/K-Beauty-vs-American-Skincare/blob/main/plots/common_frequent_bigrams_both_subreddits.png) 
+![bigrams](fixing) 
 
 - The top written about Brands included Beauty of Joseon, La Roche Posay, and cosrx.
 
