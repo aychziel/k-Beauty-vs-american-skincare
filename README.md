@@ -10,7 +10,7 @@ The data was obtained by scraping the Skincare Addiction and Korean Skincare sub
 
 ---
 
-### Data Dictionary ###
+# Data Dictionary 
 
 |Feature|Type|Dataset|Description|
 |---|---|---|---|
@@ -19,7 +19,7 @@ The data was obtained by scraping the Skincare Addiction and Korean Skincare sub
 |**self_text**|*object*|Reddit|Posts|
 |**subreddit **|*object*|Redit|Which subreddit, Korean skincare or skincare addiction|
 ---
-### Exploratory Data Analysis ###
+# Exploratory Data Analysis 
 
 As I identified the data, I took appropriate measures by using count vectorization, testing whether to use lemmanization or tokenization. I also removed some Korean text for this analysis. ![word cloud](https://github.com/aychziel/K-Beauty-vs-American-Skincare/blob/main/plots/word_cloud_eda.png) 
 
@@ -49,18 +49,18 @@ Top written about skin concerns include
 Lastly, unique words only seen in the Korean skincare subreddit include
 - water based cleanser, rice toner, anua heartleaf,  snail mucin essence,  skin barrier, and "started using".
 ---
-#### Modeling ###
+# Modeling
 
 I tried different models like Logistic Regression, K-Nearest Neighbors, Random Forest Classifier, and Naive Bayes with Count Vectorizer and Tfidf. I found that using Naive Bayes with stop words gave the best precision score of 79%, surpassing the baseline accuracy of 50%. Logistic Regression with tuned hyperparameters achieved a precision of 76%.
 
 ---
-#### Executive Summary, Conclusion & Recommendations ###
+# Executive Summary, Conclusion & Recommendations
 
 The main objective of this project was to identify the unique characteristics of K-beauty compared to American skincare. To achieve this, we classified both the Korean skincare subreddit and the SkincareAddiction subreddit. We examined the data and considered various classification models such as Logistic Regression, KNN, and others.
 
 One of the standout factors was using "natural" and innovative skincare technology in K-beauty, which includes unique ingredients like rice and snail mucin. Additionally, specific discussions about skin products such as water-based cleansers and toners were prevalent. Moreover, the focus on prevention was evident in the Korean skincare subreddit through discussions about skincare prevention.
 
 ---
-#### Limitations ###
+# Limitations 
 
 Some of the limitations of this analysis include the need to review more Korean texts in my data. I would like to try applying grid search with my top model. Additionally, I aim to use more feature engineering in the future with the summary statistics. Implementing sentiment analysis on my data would provide more insight into the top brands found between both subreddits and allow for a more in-depth comparison of Korean products and American-based products. This implementation can help distinguish between American and K-beauty differences and can also be useful for future marketing analysis, including clustering and gauging opinions.
