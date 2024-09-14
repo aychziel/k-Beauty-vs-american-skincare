@@ -26,20 +26,26 @@ As I identified the data, I took appropriate measures by using count vectorizati
 Some of my findings for both skincare subreddits were that.. 
 
 ![bigrams](https://github.com/aychziel/K-Beauty-vs-American-Skincare/blob/main/plots/common_bigrams_both_skincare_reddits.png) 
+
 The Top written about Brands included 
 - Beauty of Joseon, La Roche Posay, and cosrx.
+
 The Top written about Ingredients include 
 - Snail Mucin, Cleansing oil, Hyaluronic Acid and Salicylic Acid.
+
 Lastly, the Top written about skin concerns include 
 - Acne Prone, Dry Skin, Sensitive skin, Oily Acne Prone and Prone skin in general.
 
 ![bigrams](https://github.com/aychziel/K-Beauty-vs-American-Skincare/blob/main/plots/common_frequent_bigrams_koreanskincare_subreddit.png) 
 
 For the the Korean skincare subreddit some information that was found was that...
+
 The top written about products included
 - cosrx snail mucin, Lab birch  juice, La Roche Posay, skin1004 madgascar centella.
+  
 Top written about skin concerns include 
 - acne, oily acne prone, dry sensitive skin, sensitve acne prone, skin care routine.
+
 Lastly, unique words only seen in the Korean skincare subreddit include
 - water based cleanser, rice toner, anua heartleaf,  snail mucin essence,  skin barrier, and "started using".
 ---
