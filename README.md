@@ -1,8 +1,6 @@
 # What characteristics make K-beauty unique compared to American skincare brands?
 #### Problem statement:
 
-The skincare industry in the United States is experiencing unprecedented growth, driven by increasing consumer awareness, advancements in product formulations, and the rise of e-commerce ([Source](https://illuminationconsulting.com/2024/06/25/)).
-
 An American skincare company called "AK" is looking to add Korean skincare in their line as the company changes to be American-Korean based. Their mission as a company is implementing the latest in skincare technology in their products. As of now, the company is seeking an effective way to classify their skin care products in their system to find what products belong to the American versus the Korean and how they can better differentiate their new products for marketing purposes.
 
 The goal of this project: (1) Build a classification model that can accurately classify the Korean from the American products. (2) Offer recommendations and insights on the main differences and share findings to help support marketing decisions to support the mission of the company.
@@ -25,37 +23,27 @@ Background on data: The following data was obtained from scraping the Skincare A
 ---
 ### Exploratory Data Analysis ###
 
-As I identified the data, I took appropriate measures by using count vectorization, testing whether to use lemmanization or tokenization etc ![word cloud](https://github.com/aychziel/K-Beauty-vs-American-Skincare/blob/main/plots/word_cloud_eda.png) 
-
-I also tried to remove korean text for the purpose of this analysis.
+As I identified the data, I took appropriate measures by using count vectorization, testing whether to use lemmanization or tokenization. I also removed some korean text for the purpose of this analysis. ![word cloud](https://github.com/aychziel/K-Beauty-vs-American-Skincare/blob/main/plots/word_cloud_eda.png) 
 
 Some of my findings for both skincare subreddits were that.. 
 
 ![bigrams](https://github.com/aychziel/K-Beauty-vs-American-Skincare/blob/main/plots/common_bigrams_both_skincare_reddits.png) 
 The Top written about Brands included 
 - Beauty of Joseon, La Roche Posay, and cosrx.
-
 The Top written about Ingredients include 
 - Snail Mucin, Cleansing oil, Hyaluronic Acid and Salicylic Acid.
-
 Lastly, the Top written about skin concerns include 
 - Acne Prone, Dry Skin, Sensitive skin, Oily Acne Prone and Prone skin in general.
-
-It was found that although there was overlap in the skincare addiction subreddit there is more discussion on brands and less on "natural" skin care ingredients.
 
 ![bigrams](https://github.com/aychziel/K-Beauty-vs-American-Skincare/blob/main/plots/common_frequent_bigrams_koreanskincare_subreddit.png) 
 
 For the the Korean skincare subreddit some information that was found was that...
 The top written about products included
 - cosrx snail mucin, Lab birch  juice, La Roche Posay, skin1004 madgascar centella.
-
 Top written about skin concerns include 
 - acne, oily acne prone, dry sensitive skin, sensitve acne prone, skin care routine.
-
 Lastly, unique words only seen in the Korean skincare subreddit include
 - water based cleanser, rice toner, anua heartleaf,  snail mucin essence,  skin barrier, and "started using".
-
-Based on my findings, my recommendation is that utilizing multinomial Naive Bayes model, with default parameters will best help classify K-beauty and American skincare and can be used to support marketing initatives to better target customers.
 
 #### Modeling ###
 I tried a variety of models including Logistic Regression with with Count Vectorizer, Tfidf, K-Nearest Neighbors, Random Forest Classifier, and Naive Bayes. To preprocess the text, I used Count Vectorizer with few restraints(max features, stop words). Most of the limitation came from the stop words. This affected the accuracy, however made the information more useful.
@@ -71,4 +59,4 @@ I foudn that the main factors that stood out were Korean skincares use of "natur
 
 ### Limitations ###
 
-Some of the limitations to this analysis include reviewing more Korean Text in my data to increase my score and applying grid search with my top model. I would also use more Feature Engineering with the summary statitics. I would also implement Sentiment Analysis on my data to get more insight on top brands I found between both subreddit and compare Korean products and American-based products in depth. Lastly,  Implementing this can not only help differentiate between the American and K-beauty diffrences, but can also be useful for future analysis in marketing through clustering, gauging opnion and more! 
+Some of the limitations to this analysis include reviewing more Korean Text in my data to increase my score and applying grid search with my top model. I would also use more Feature Engineering with the summary statitics. I would also implement Sentiment Analysis on my data to get more insight on top brands I found between both subreddit and compare Korean products and American-based products in depth. Implementing this can not only help differentiate between the American and K-beauty diffrences, but can also be useful for future analysis in marketing through clustering, gauging opnion and more! 
