@@ -56,7 +56,6 @@ The purpose of this project was to find what characteristics make K-beauty uniqu
 
 I foudn that the main factors that stood out were Korean skincares use of "natural" and innovative skin technology that includes implementing unique ingredients such as rice and snail mucin and specific discussion of types of skin products such as water based cleansers, toners etc. They also focus on prevention as there was discussion about skin care prevention in the korean skincare subreddit.
 
-
 ### Limitations ###
 
 Some of the limitations to this analysis include reviewing more Korean Text in my data to increase my score and applying grid search with my top model. I would also use more Feature Engineering with the summary statitics. I would also implement Sentiment Analysis on my data to get more insight on top brands I found between both subreddit and compare Korean products and American-based products in depth. Implementing this can not only help differentiate between the American and K-beauty diffrences, but can also be useful for future analysis in marketing through clustering, gauging opnion and more! 
