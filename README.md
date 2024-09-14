@@ -10,9 +10,8 @@ The goal of this project: (1) Build a classification model that can accurately c
 ---
 
 ### Datasets ###
-Background on data: The following data was obtained from scraping the Skincare Addiction subreddit and the Korean Skincare subreddit on Reddit. 
+Background on data: The following data was obtained from scraping the Skincare Addiction subreddit and the Korean Skincare subreddit on Reddit.Skincare Addiction is a subreddit where users discuss skin care concerns, product recommendations, opinions of ingredients, and more. The Korean skincare subreddit is a similar community to the Skin Care Addiction where they discuss similar general topics, however, the Korean skincare subreddit is known to discuss more about Korean-based skin care products, ingredients and the industry but not exclusive to all skincare products.
 
-Skincare Addiction is a subreddit where users discuss skin care concerns, product recommendations, opinions of ingredients, and more. The Korean skincare subreddit is a similar community to the Skin Care Addiction where they discuss similar general topics, however, the Korean skincare subreddit is known to discuss more about Korean-based skin care products, ingredients and the industry but not exclusive to all skincare products.
 ---
 
 ### Data Dictionary ###
@@ -33,7 +32,6 @@ I also tried to remove korean text for the purpose of this analysis.
 Some of my findings for both skincare subreddits were that.. 
 
 ![bigrams](https://github.com/aychziel/K-Beauty-vs-American-Skincare/blob/main/plots/common_bigrams_both_skincare_reddits.png) 
-![bigrams]( ) 
 The Top written about Brands included 
 - Beauty of Joseon, La Roche Posay, and cosrx.
 
