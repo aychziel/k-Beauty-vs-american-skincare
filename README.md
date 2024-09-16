@@ -1,5 +1,5 @@
 # What characteristics make K-beauty unique compared to American skincare brands?
-#### Problem statement:
+#### Problem statement: ###
 
 An American skincare company is transitioning to an American-Korean-based company and aiming to incorporate Korean skincare into their line. They are seeking to classify their skincare products as American or Korean and differentiate the new products for marketing. The project aims to build a classification model and provide insights to support marketing decisions in line with the company's mission and also be added to their system.
 
